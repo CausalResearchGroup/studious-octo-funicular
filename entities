@@ -1,0 +1,12 @@
+exports.handler = async () => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      total: 2,
+      entities: [
+        { name: "Worker A", status: "Active", earnings: 123.45 },
+        { name: "Worker B", status: "Idle", earnings: 67.89 }
+      ]
+    })
+  };
+};
